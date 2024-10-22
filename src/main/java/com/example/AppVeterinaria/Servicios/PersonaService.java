@@ -1,5 +1,4 @@
 package com.example.AppVeterinaria.Servicios;
-
 import com.example.AppVeterinaria.Entidades.Persona;
 import com.example.AppVeterinaria.Repositorios.PersonaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,10 +28,6 @@ private PersonaRepository personaRepository;
     public Persona crearPersona(Persona persona) {
         return personaRepository.save(persona);
     }
-
-//    public Persona guardarPersona(Persona persona) {
-//        return personaRepository.save(persona);
-//    }
 
     public boolean eliminarPersona(int id) {
         if (personaRepository.existsById(id)) {
