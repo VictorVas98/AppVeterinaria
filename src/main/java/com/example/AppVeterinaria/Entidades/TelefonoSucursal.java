@@ -3,17 +3,17 @@ package com.example.AppVeterinaria.Entidades;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "TelefonoPersona")
-public class TelefonoPersona {
+@Table(name = "TelefonoSucursal")
+public class TelefonoSucursal {
 
     @Id
     @Column(name = "CorrelativoTelefono")
     private int correlativoTelefono;
 
-    @Column(name = "CodigoPersona")
-    private int codigoPersona;
+    @Column(name = "CodigoSucursal")
+    private int codigoSucursal;
 
-    public TelefonoPersona() {
+    public TelefonoSucursal() {
     }
 
     public int getCorrelativoTelefono() {
@@ -24,11 +24,11 @@ public class TelefonoPersona {
         this.correlativoTelefono = correlativoTelefono;
     }
 
-    public int getCodigoPersona() {
-        return codigoPersona;
+    public int getCodigoSucursal() {
+        return codigoSucursal;
     }
 
-    public void setCodigoPersona(int codigoPersona) {
-        this.codigoPersona = codigoPersona;
+    public void setCodigoSucursal(int codigoSucursal) {
+        this.codigoSucursal = codigoSucursal;
     }
 }
