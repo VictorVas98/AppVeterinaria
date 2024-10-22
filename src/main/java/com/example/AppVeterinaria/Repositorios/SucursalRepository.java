@@ -1,9 +1,9 @@
 package com.example.AppVeterinaria.Repositorios;
-import com.example.AppVeterinaria.Entidades.Persona;
+
+import com.example.AppVeterinaria.Entidades.Sucursal;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface PersonaRepository extends JpaRepository<Persona, Integer> {
-
+public interface SucursalRepository extends JpaRepository<Sucursal, Integer> {
 }
