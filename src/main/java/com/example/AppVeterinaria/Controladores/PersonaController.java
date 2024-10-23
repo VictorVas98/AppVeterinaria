@@ -39,7 +39,6 @@ public class PersonaController {
         return new ResponseEntity<>(nuevaPersona, HttpStatus.CREATED);
     }
 
-    // Actualizar una persona existente (PUT)
     @PutMapping("/{id}")
     public ResponseEntity<Persona> actualizarPersona(@PathVariable int id, @RequestBody Persona personaDetalles) {
         Optional<Persona> personaExistente = personaService.obtenerPersonaPorId(id);
@@ -64,7 +63,6 @@ public class PersonaController {
         }
     }
 
-    // Eliminar una persona (DELETE)
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> eliminarPersona(@PathVariable int id) {
         Optional<Persona> persona = personaService.obtenerPersonaPorId(id);
